@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+.flex {
+    display: flex;
+}
+/* login */
+body {
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 40px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header .logo , header p {
+    font-size: 22px;
+    font-weight: bold;
+    text-transform:capitalize;
+}
+
+.login {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+
+}
+
+form {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 50px 50px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    justify-content: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+input[type="submit"]:hover {
+    background-color: #2a0000;
+    border: none;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+.password {
+    position: relative;
+}
+.password span svg {
+    font-size: 16px;
+    color:  rgb(81, 81, 81);
+}
+.password span svg:hover {
+    color:  #2a0000;;
+}
+.password span {
+    position: absolute;
+    cursor: pointer;
+    top: 55%;
+    right: 10px;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+.error-alert {
+    background-color: #dc3545 ;
+    color: #fff;
+    width: 100%;
+    padding: 20px 10px;
+    margin: 10px 0;
+    text-align: center;
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Home</title>
+</head>
+<body>
+    <!-- header -->
+    <header class="flex">
+        <div class="logo">My Admin</div>
+        <div class="header-container flex">
+            <div class="admin flex">
+                <h6>abdo_20</h6>
+                <a href="profile.html" class="avater">
+                    <img src="images/profile.png" alt="">
+                    <div class="circle flex">5</div>
+                </a>
+            </div>
+            <a href="index.html" class="logout flex myTrans">
+                <h6>Logout</h6>
+                <span><i class="fa-solid fa-right-from-bracket"></i></span>
+            </a>
+        </div>
+    </header>
+
+    <main class="flex">
+        <!-- aside section -->
+        <aside id="aside" class="myTrans">
+            <span class="flex myTrans" id="asideMarg">
+                <i class="fa-solid fa-arrows-left-right-to-line"></i>
+            </span>
+            <ul class="flex">
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="home.html">Dashbord</a></li>
+            </ul>
+        </aside>
+        <!-- search + table -->
+        <section class="mainContent">
+            <div class="container">
+                <!-- add new product -->
+                <div class="add new product">
+                    <div class="container">
+                        <h3>Add a new product</h3>
+                        <div class="data-container">
+                            <div class="form"></div>
+                            <label for="">Product Name</label>
+                            <input type="text" placeholder="Product Name" id="productName">
+                            <label for="">Product Price</label>
+                            <input type="text" placeholder="Product Price" id="productPrice">
+                            <label for="">Product Category</label>
+                            <input type="text" placeholder="Product Category" id="productCategory">
+                            <label for="">Product Description</label>
+                            <input type="text"placeholder="Product Description" id="productDescription">
+                            <div class="btns-container">
+                                <button id="addBtn">Add</button>
+                                <button id="updateBtn" class="hide">Update</button>
+                            </div>
+                            <div class="error-alert hide" id="error">
+                                <p>Please enter product data</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="options flex">
+                    <div class="search flex">
+                        <input type="text" placeholder="name" id="searchInput">
+                        <span class="flex" id="searchIcon"><i class="fa-solid fa-magnifying-glass"></i></span>
+                        <span class="flex" id="refresh"><i class="fa-solid fa-arrows-rotate" style="color: #ffffff;"></i></span>
+                    </div>
+                    <!-- <div class="show flex">
+                        <h6>Show</h6>
+                        <input type="number" placeholder="10">
+                        <h6>Entites</h6>
+                    </div> -->
+                </div>
+                <div class="table">
+                    <h2>Products Data</h2>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>Product Name</th>
+                                <th>Product Price</th>
+                                <th>Product Category</th>
+                                <th>Produc description</th>
+                                <th>Options</th>
+                            </tr>
+                        </thead>
+                        <tbody id="info">
+                        </tbody>
+                        <tbody id="infoSearch" class="hide">
+                        </tbody>
+                        <div class="hide" id="NotingToShow"></div>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/all.min.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

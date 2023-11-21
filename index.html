@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/login.css">
+    <title>Login</title>
+</head>
+<body>
+    <header class="flex">
+        <div class="logo">AMIT</div>
+        <p>Welcome in admin side</p>
+    </header>
+    <section class="login flex">
+        <div class="container">
+            <form action="" class="flex" id="loginForm" method="get">
+                <div class="error-alert">
+                    <p>Wrong username or password !</p>
+                </div>
+                <div class="username">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" placeholder="example_20" required>
+                </div>
+                <div class="password">
+                    <label for="password">Password</label>
+                    <input type="password" placeholder="********" name="password" id="passwordInput" required>
+                    <span id="showPassword"><i class="fa-solid fa-eye"></i></span>
+                    <!-- <i class="fa-solid fa-eye-slash"></i> -->
+                </div>
+                <input type="submit" value="Login">
+            </form>
+        </div>
+    </section>
+    <script src="js/all.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
