@@ -10,7 +10,7 @@ let updateBtn = document.getElementById('updateBtn');
 let myTable = document.getElementById('info');
 let error = document.getElementById('error');
 let allProuductData = []; //array carry all objects of products 
-let 
+
 
 //get Products form local 
 if(window.localStorage.getItem(`Products`)) {
